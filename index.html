@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEURAL LIBRARIAN // ONTOLOGY MAPPER</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="lounge-canvas"></canvas>
+
+    <div id="hud">
+        <div class="top-row">
+            <div class="system-meta">
+                <div class="core-status">
+                    <div class="pulse-ring"></div>
+                    <div class="status-labels">
+                        <h1>NEURAL_LIBRARIAN_v1.0</h1>
+                        <p id="system-state">SCRAPING_GLOBAL_ONTOLOGIES...</p>
+                    </div>
+                </div>
+            </div>
+            <div id="clock">00:00:00</div>
+        </div>
+
+        <div id="insight-portal">
+            <div class="meta-label">PROACTIVE_SYNTHESIS_ACTIVE</div>
+            <h2 id="current-insight">Initializing Knowledge Cross-Pollination...</h2>
+            <div class="logic-chain">
+                <span class="node-tag" id="node-a">---</span>
+                <span class="connector">➔</span>
+                <span class="node-tag" id="node-b">---</span>
+                <span class="connector">➔</span>
+                <span class="node-tag" id="node-result">---</span>
+            </div>
+        </div>
+
+        <div class="bottom-row">
+            <div class="input-sector">
+                <input type="text" id="query-input" placeholder="INPUT SUBJECT FOR COLLISION ANALYSIS..." autocomplete="off">
+                <button id="evolve-btn">EXECUTE_MAP</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="scanline-overlay"></div>
+    <div class="vignette"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
